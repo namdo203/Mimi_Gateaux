@@ -30,8 +30,8 @@
                 <nav>
                     <div class="nav__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-menu">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
                             <line x1="3" y1="12" x2="21" y2="12" />
                             <line x1="3" y1="6" x2="21" y2="6" />
                             <line x1="3" y1="18" x2="21" y2="18" />
@@ -40,85 +40,197 @@
                     <div class="nav__bgOverlay"></div>
                     <ul class="nav__list">
                         <div class="nav__close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-x">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-x">
                                 <line x1="18" y1="6" x2="6" y2="18" />
                                 <line x1="6" y1="6" x2="18" y2="18" />
                             </svg>
                         </div>
                         <div class="nav__list__wrapper">
-                            <li><a class="nav__link" href="./index.html">Acceuil</a></li>
-                            <li><a class="nav__link" href="./menu.html">Menu</a></li>
-                            <li><a class="nav__link" href="./about.html">A propos</a></li>
-                            <li><a class="btn primary-btn" href="./contact.html">Contact</a></li>
+                            <li><a class="nav__link" href="#home">Acceuil</a></li>
+                            <li><a class="nav__link" href="#menu">Menu</a></li>
+                            <li><a class="nav__link" href="#propos">A propos</a></li>
+                            <li><a class="btn primary-btn" href="#contact">Contact</a></li>
                         </div>
-                    </ul>            
+                    </ul>
                 </nav>
             </div>
         </div>
     </div>
     <!-- end Nav Section -->
+    <!-- Propos section -->
+    <section class="propos" data-aos="fade-down">
+        <p>
+            Nés à Hanoï, les Gâteaux de Mimi sont, devenus synonymes de gourmandise au capital. <br> Composez votre boîte avec les parfums de votre choix, et faites-vous livrer avec attention dans tout Hanoï grâce à la livraison en frais.
+        </p>
+    </section>
+    <!-- end Propos Section -->
 
-
-
+    <!-- Slideshow Section -->
+    <section class="slideshow__wrapper">
+        <div class="slideshow__col1" data-aos="fade-right">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/Images/biscuit_maison_7.jpeg" style="width:100%">
+                    <div class="text">Maisons en Biscuit</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="/Images/biscuit_maison_4.jpg" style="width:100%">
+                    <div class="text">Maisons en Biscuit</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="/Images/biscuit_maison_11.JPG" style="width:100%">
+                    <div class="text">Maisons en Biscuit</div>
+                </div>   
+            </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+        </div>
+        <div class="slideshow__col2" data-aos="fade-left">
+            <h2>
+                Pas seulement délicieux, <br> mais aussi très joli !
+            </h2>
+            <p>
+                Célébrez en famille ou entre amis autour des créations pâtissières Mimi. <br> Commandez en ligne, puis venez retirer votre Pâtisserie dans notre boutique. <br> Les entremets sont disponibles dans notre boutique ou sur commande par téléphone.
+            </p>
+        </div>
+    </section>
+    <!-- end Slideshow Section -->
+    <!-- Store Info Section -->
+    <section id="storeInfo" data-aos="fade-up">
+    <div class="container">
+        <div class="storeInfo__wrapper">
+        <div class="storeInfo__item">
+            <div class="storeInfo__icon">
+            <img src="./Logo/clock.svg" alt="clock icon">
+            </div>
+            <h3 class="storeInfo__title">
+            10:00 - 19:00
+            </h3>
+            <p class="storeInfo__text">
+            Horaires
+            </p>
+        </div>
+        <div class="storeInfo__item">
+            <div class="storeInfo__icon">
+            <img src="/Logo/map-pin.svg" alt="map icon">
+            </div>
+            <h3 class="storeInfo__title">
+            Hanoï, Viêtnam
+            </h3>
+            <p class="storeInfo__text">
+            Adresse
+            </p>
+        </div>
+        <div class="storeInfo__item">
+            <div class="storeInfo__icon">
+            <img src="./Logo/phone-call.svg" alt="phone icon">
+            </div>
+            <h3 class="storeInfo__title">
+            +84 9 62 32 10 63
+            </h3>
+            <p class="storeInfo__text">
+            Hotline
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+    <!-- Paiement_footer -->
+    <div class="paiement" data-aos="flip-down">
+        <img src="/Logo/footer-american-express.png" alt="american express">
+        <img src="/Logo/footer-mastercard.png" alt="mastercard">
+        <img src="/Logo/footer-paypal.png" alt="paypal">
+        <img src="/Logo/footer-visa.png" alt="visa">
+    </div>
+    <!-- End Paiement footer -->
     <!-- Footer -->
     <footer>
         <div class="container">
-        <div class="footer__wrapper">
-        <div class="footer__col1">
-            <div class="footer__logo">
-                <img src="./Logo/logo_mimi_cut.png" alt="Mimi's logo">
+            <div class="footer__wrapper">
+                <div class="footer__col1">
+                    <div class="footer__logo">
+                        <img src="./Logo/logo_mimi_cut.png" alt="Mimi's logo">
+                    </div>
+                    <div>
+                        <p class="footer__desc">
+                            Des gâteaux frais et délicieux faits maison qui raviront toute la famille.
+                        </p>
+                    </div>
+                    <div class="footer__socials">
+                        <h2 class="footer__socials__title">RETROUVEZ-NOUS SUR :</h2>
+                        <ol class="footer__socials__list">
+                            <li>
+                                <a href="http://fb.com/mimi.sweetcake">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagr.am/mimi.sweetcake">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-instagram">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="footer__col2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=97%20V%C5%A9%20Ng%E1%BB%8Dc%20Phan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://fmovies2.org"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">iframe google maps</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p class="footer__desc">
-                    Des gâteaux frais et délicieux faits maison qui raviront toute la famille.
-                </p>
-            </div>
-            <div class="footer__socials">
-                <h1 class="footer__socials__title">RETROUVEZ-NOUS SUR :</h1>
-                <ol class="footer__socials__list">
-                <li>
-                    <a href="http://fb.com/mimi.sweetcake">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-facebook">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://instagr.am/mimi.sweetcake">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-instagram">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                    </svg>
-                    </a>
-                </li>
-                </ol>
-            </div>
-            </div>
-        <div class="footer__col2"></div>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="677" height="333" id="gmap_canvas" src="https://maps.google.com/maps?q=4%20rue%20Scarron%20fontenay-aux-roses&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:right;height:333px;width:700px;}</style><a href="https://www.embedgooglemap.net">iframe google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:333px;width:700px;}</style></div></div>
-        </div>
         </div>
     </footer>
     <div id="copyright">
         <div class="container">
-        <p class="copyright__text">
-            © copyright 2021 Namdo203 | All rights reserved
-        </p>
+            <p class="copyright__text">
+                © copyright 2021 Namdo203 | All rights reserved
+            </p>
         </div>
     </div>
-  <!-- End Footer -->
-
+    <!-- End Footer -->
 
     <!-- aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- custom script -->
     <script src="./main.js"></script>
 </body>
+
 </html>
