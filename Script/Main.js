@@ -41,6 +41,8 @@ AOS.init({
 var slideIndex = 0;
 showSlides();
 
+
+// ============= SLIDES =============
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
