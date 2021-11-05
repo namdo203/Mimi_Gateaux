@@ -12,12 +12,12 @@
     <!-- aos library css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- custom css -->
-    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
 </head>
 
 <body>
     <!-- nav section -->
-    <section class="nav">
+    <section class="nav navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="nav__wrapper">
                 <a href="/Index.html" class="logo">
@@ -48,10 +48,10 @@
                             </svg>
                         </div>
                         <div class="nav__list__wrapper">
-                            <li><a class="nav__link" href="#home">Acceuil</a></li>
-                            <li><a class="nav__link" href="#menu">Menu</a></li>
+                            <li><a class="nav__link" href="#acceuil">Acceuil</a></li>
+                            <li><a class="nav__link" href="#slide">Slideshow</a></li>
                             <li><a class="nav__link" href="#propos">A propos</a></li>
-                            <li><a class="btn primary-btn" href="#contact">Contact</a></li>
+                            <li><a class="btn primary-btn" href="#storeInfo">Contact</a></li>
                         </div>
                     </ul>
                 </nav>
@@ -60,142 +60,167 @@
     </section>
     <!-- end Nav Section -->
     <!-- Propos section -->
-    <section class="propos" data-aos="fade-down">
+    <section class="propos" id="acceuil" data-aos="fade-down">
         <p>
-            Nés à Hanoï, les Gâteaux de Mimi sont, devenus synonymes de gourmandise au capital. <br> Composez votre boîte avec les parfums de votre choix, et faites-vous livrer avec attention dans tout Hanoï grâce à la livraison en frais.
+            Nés à Hanoï, les Gâteaux de Mimi sont, devenus synonymes de gourmandise au capital. <br> Composez votre
+            boîte avec les parfums de votre choix, et faites-vous livrer avec attention dans tout Hanoï grâce à la
+            livraison en frais.
         </p>
     </section>
     <!-- end Propos Section -->
 
     <!-- Slideshow Section -->
-    <section class="slideshow__wrapper">
+    <section class="slideshow__wrapper" id="slide">
         <div class="slideshow__col1" data-aos="fade-right">
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <img src="/Images/biscuit_maison_7.jpeg" style="width:100%">
                     <div class="text">Maisons en Biscuit</div>
                 </div>
-                
+
                 <div class="mySlides fade">
                     <img src="/Images/biscuit_maison_4.jpg" style="width:100%">
                     <div class="text">Maisons en Biscuit</div>
                 </div>
-                
+
                 <div class="mySlides fade">
                     <img src="/Images/biscuit_maison_11.JPG" style="width:100%">
                     <div class="text">Maisons en Biscuit</div>
-                </div>   
-            </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
                 </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
         <div class="slideshow__col2" data-aos="fade-left">
             <h2>
                 Pas seulement délicieux, <br> mais aussi très joli !
             </h2>
             <p>
-                Célébrez en famille ou entre amis autour des créations pâtissières Mimi. <br> Commandez en ligne, puis venez retirer votre Pâtisserie dans notre boutique. <br> Les entremets sont disponibles dans notre boutique ou sur commande par téléphone.
+                Célébrez en famille ou entre amis autour des créations pâtissières Mimi. <br> Commandez en ligne, puis
+                venez retirer votre Pâtisserie dans notre boutique. <br> Les entremets sont disponibles dans notre
+                boutique ou sur commande par téléphone.
             </p>
         </div>
     </section>
     <!-- end Slideshow Section -->
     <!-- Store Info Section -->
     <section id="storeInfo" data-aos="fade-up">
-    <div class="container">
-        <div class="storeInfo__wrapper">
-        <div class="storeInfo__item">
-            <div class="storeInfo__icon">
-            <img src="/Logo/clock.svg" alt="clock icon">
+        <div class="container">
+            <div class="storeInfo__wrapper">
+                <div class="storeInfo__item">
+                    <div class="storeInfo__icon">
+                        <img src="/Logo/clock.svg" alt="clock icon">
+                    </div>
+                    <h3 class="storeInfo__title">
+                        10:00 - 19:00
+                    </h3>
+                    <p class="storeInfo__text">
+                        Horaires
+                    </p>
+                </div>
+                <div class="storeInfo__item">
+                    <div class="storeInfo__icon">
+                        <img src="/Logo/map-pin.svg" alt="map icon">
+                    </div>
+                    <h3 class="storeInfo__title">
+                        Hanoï, Viêtnam
+                    </h3>
+                    <p class="storeInfo__text">
+                        Adresse
+                    </p>
+                </div>
+                <div class="storeInfo__item">
+                    <div class="storeInfo__icon">
+                        <img src="/Logo/phone-call.svg" alt="phone icon">
+                    </div>
+                    <h3 class="storeInfo__title">
+                        +84 9 62 32 10 63
+                    </h3>
+                    <p class="storeInfo__text">
+                        Hotline
+                    </p>
+                </div>
             </div>
-            <h3 class="storeInfo__title">
-            10:00 - 19:00
-            </h3>
-            <p class="storeInfo__text">
-            Horaires
-            </p>
         </div>
-        <div class="storeInfo__item">
-            <div class="storeInfo__icon">
-            <img src="/Logo/map-pin.svg" alt="map icon">
-            </div>
-            <h3 class="storeInfo__title">
-            Hanoï, Viêtnam
-            </h3>
-            <p class="storeInfo__text">
-            Adresse
-            </p>
-        </div>
-        <div class="storeInfo__item">
-            <div class="storeInfo__icon">
-            <img src="/Logo/phone-call.svg" alt="phone icon">
-            </div>
-            <h3 class="storeInfo__title">
-            +84 9 62 32 10 63
-            </h3>
-            <p class="storeInfo__text">
-            Hotline
-            </p>
-        </div>
-        </div>
-    </div>
     </section>
+    <!-- info section end -->
+
+    <section class="gallery__cupcake">
+        <div class="cupcake">
+            <div class="flip__front">
+                <img src="/Images/cupcake_2_sqr.jpg" alt="cupcake_2" style="width: 40%;">
+            </div>
+            <div class="flip__back">
+                <img src="/Images/cupcake_3.JPG" alt="cupcake_3" style="width: 40%;">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
     <!-- Paiement_footer -->
-    <div class="paiement" data-aos="flip-down">
-        <img src="/Logo/footer-american-express.png" alt="American Express" title="American Express">
-        <img src="/Logo/footer-mastercard.png" alt="Mastercard" title="Mastercard">
-        <img src="/Logo/footer-paypal.png" alt="Paypal" title="Paypal">
-        <img src="/Logo/footer-visa.png" alt="Visa" title="Visa">
+    <div class="paiement " data-aos="flip-down ">
+        <img src="/Logo/footer-american-express.png " alt="American Express " title="American Express ">
+        <img src="/Logo/footer-mastercard.png " alt="Mastercard " title="Mastercard ">
+        <img src="/Logo/footer-paypal.png " alt="Paypal " title="Paypal ">
+        <img src="/Logo/footer-visa.png " alt="Visa " title="Visa ">
     </div>
     <!-- End Paiement footer -->
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__col1">
-                    <div class="footer__logo">
-                        <img src="./Logo/logo_mimi_cut.png" alt="Mimi's logo" title="Mimi's Logo">
+        <div class="container ">
+            <div class="footer__wrapper ">
+                <div class="footer__col1 ">
+                    <div class="footer__logo ">
+                        <img src="./Logo/logo_mimi_cut.png " alt="Mimi 's logo" title="Mimi's Logo ">
                     </div>
                     <div>
-                        <p class="footer__desc">
+                        <p class="footer__desc ">
                             Des gâteaux frais et délicieux faits maison qui raviront toute la famille.
                         </p>
                     </div>
-                    <div class="footer__socials">
-                        <h2 class="footer__socials__title">RETROUVEZ-NOUS SUR :</h2>
-                        <ol class="footer__socials__list">
+                    <div class="footer__socials ">
+                        <h2 class="footer__socials__title ">RETROUVEZ-NOUS SUR :</h2>
+                        <ol class="footer__socials__list ">
                             <li>
-                                <a href="http://fb.com/mimi.sweetcake" title="Facebook">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-facebook">
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                <a href="http://fb.com/mimi.sweetcake " title="Facebook ">
+                                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 "
+                                        viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="1 "
+                                        stroke-linecap="round " stroke-linejoin="round "
+                                        class="feather feather-facebook ">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z " />
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://instagr.am/mimi.sweetcake" title="Instagram">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-instagram">
-                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                <a href="http://instagr.am/mimi.sweetcake " title="Instagram ">
+                                    <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 "
+                                        viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="1 "
+                                        stroke-linecap="round " stroke-linejoin="round "
+                                        class="feather feather-instagram ">
+                                        <rect x="2 " y="2 " width="20 " height="20 " rx="5 " ry="5 " />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z " />
+                                        <line x1="17.5 " y1="6.5 " x2="17.51 " y2="6.5 " />
                                     </svg>
                                 </a>
                             </li>
                         </ol>
                     </div>
                 </div>
-                <div class="footer__col2">
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=97%20V%C5%A9%20Ng%E1%BB%8Dc%20Phan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                href="https://fmovies2.org"></a><br>
+                <div class="footer__col2 ">
+                    <div class="mapouter ">
+                        <div class="gmap_canvas "><iframe width="100% " height="100% " id="gmap_canvas "
+                                src="https://maps.google.com/maps?q=97%20V%C5%A9%20Ng%E1%BB%8Dc%20Phan&t=&z=13&ie=UTF8&iwloc=&output=embed "
+                                frameborder="0 " scrolling="no
+                " marginheight="0 " marginwidth="0 "></iframe>
+                            <a href="https://fmovies2.org "></a><br>
                             <style>
                                 .mapouter {
                                     position: relative;
@@ -203,7 +228,7 @@
                                     height: 100%;
                                     width: 100%;
                                 }
-                            </style><a href="https://www.embedgooglemap.net">iframe google maps</a>
+                            </style><a href="https://www.embedgooglemap.net ">iframe google maps</a>
                             <style>
                                 .gmap_canvas {
                                     overflow: hidden;
@@ -218,10 +243,11 @@
             </div>
         </div>
     </footer>
-    <div id="copyright">
-        <div class="container">
-            <p class="copyright__text">
-                © copyright 2021 <a href="mailto:namdo203@icloud.com" title="Veuillez m'envoyez un email ?">Namdo203</a> | All rights reserved
+    <div id="copyright ">
+        <div class="container ">
+            <p class="copyright__text ">
+                © copyright 2021 <a href="mailto:namdo203@icloud.com "
+                    title="Veuillez m 'envoyez un email ?">Namdo203</a> | All rights reserved
             </p>
         </div>
     </div>
