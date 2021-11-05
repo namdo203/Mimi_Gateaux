@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=EB+Garamond&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Concert+One&family=EB+Garamond&family=Parisienne&display=swap');
 
 
 html{
@@ -41,10 +41,12 @@ h1 {
 h2 {
     font-family: Concert One, sans-serif;
     font-size: xx-large;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
-h3, h4 {
-    font-family: Dancing Script, sans-serif;
+h3 {
+    font-family: Caveat, sans-serif;
+    font-size: x-large;
+    padding: 10px;
 }
 p {
     font-family: EB Garamond, sans-serif;

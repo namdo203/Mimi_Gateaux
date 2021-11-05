@@ -49,9 +49,9 @@
                             </svg>
                         </div>
                         <div class="nav__list__wrapper">
-                            <li><a class="nav__link" href="#acceuil">Acceuil</a></li>
-                            <li><a class="nav__link" href="#slide">Slideshow</a></li>
                             <li><a class="nav__link" href="#propos">A propos</a></li>
+                            <li><a class="nav__link" href="#slide">Slideshow</a></li>
+                            <li><a class="nav__link" href="#produits">Produits</a></li>
                             <li><a class="btn primary-btn" href="#storeInfo">Contact</a></li>
                         </div>
                     </ul>
@@ -61,7 +61,7 @@
     </section>
     <!-- end Nav Section -->
     <!-- Propos section -->
-    <section class="propos" id="acceuil" data-aos="fade-down">
+    <section class="propos" id="propos" data-aos="fade-down">
         <p>
             Nés à Hanoï, les Gâteaux de Mimi sont, devenus synonymes de gourmandise au capital. <br> Composez votre
             boîte avec les parfums de votre choix, et faites-vous livrer avec attention dans tout Hanoï grâce à la
@@ -109,9 +109,15 @@
     </section>
     <!-- end Slideshow Section -->
     <!-- Store Info Section -->
-    <section id="storeInfo" data-aos="fade-up">
+    <section id="storeInfo">
         <div class="container">
-            <div class="storeInfo__wrapper">
+            <div class="contact">
+                <h2>CONTACTEZ-NOUS</h2>
+                <P>
+                    Vous avez une question ou besoin d’une information complémentaire ? N’hésitez pas à nous contacter !  <br> Nos équipes vous répondront dans les meilleurs délais.
+                </P>
+            </div>
+            <div class="storeInfo__wrapper" data-aos="fade-up">
                 <div class="storeInfo__item">
                     <div class="storeInfo__icon">
                         <img src="/Logo/clock.svg" alt="clock icon">
@@ -134,26 +140,133 @@
                         Adresse
                     </p>
                 </div>
-                <div class="storeInfo__item">
-                    <div class="storeInfo__icon">
-                        <img src="/Logo/phone-call.svg" alt="phone icon">
+                <a href="tel:+84-9-62-32-10-63">
+                    <div class="storeInfo__item">
+                        <div class="storeInfo__icon">
+                            <img src="/Logo/phone-call.svg" alt="phone icon">
+                        </div>
+                        <h3 class="storeInfo__title">
+                            +84 9 62 32 10 63
+                        </h3>
+                        <p class="storeInfo__text">
+                            Hotline
+                        </p>
                     </div>
-                    <h3 class="storeInfo__title">
-                        +84 9 62 32 10 63
-                    </h3>
-                    <p class="storeInfo__text">
-                        Hotline
-                    </p>
-                </div>
+                </a>
+                <a href="http://fb.com/mimi.sweetcake" target="_blank">
+                    <div class="storeInfo__item">
+                        <div class="storeInfo__icon">
+                            <img src="/Logo/facebook.svg" alt="facebook icon">
+                        </div>
+                        <h3 class="storeInfo__title">
+                            Envoyer un Message
+                        </h3>
+                        <p class="storeInfo__text">
+                            Facebook
+                        </p>
+                    </div>
+                </a>
+                <a href="http://instagr.am/mimi.sweetcake" target="_blank">
+                    <div class="storeInfo__item">
+                        <div class="storeInfo__icon">
+                            <img src="/Logo/instagram.svg" alt="instagram icon">
+                        </div>
+                        <h3 class="storeInfo__title">
+                            Envoyer un Message
+                        </h3>
+                        <p class="storeInfo__text"> Instagram </p>
+                    </div>
+                </a>
             </div>
+            
         </div>
     </section>
     <!-- info section end -->
 
     <!-- Gallery Section -->
-
-    <h2>PRODUITS POPULAIRES</h2>
-
+    <section class="gallery__wrapper" id="produits" >
+        <div class="gallery__col1" data-aos="fade-up-right">
+            <h2>PRODUITS POPULAIRES</h2>
+            <h3>Matières premières de qualité</h3>
+            <p>
+                Nous utilisons dans la fabrication de nos pâtisseries les meilleurs ingrédients. <br>  Seuls les meilleurs ingrédients offrant un maximum de sécurité entrent dans la préparation de nos pâtisseries et biscuits.  
+            </p>
+            <h3>Renforcement des contrôles de sécurité alimentaire </h3>
+            <p>
+                Nos fournisseurs disposent d'un système de traçabilité efficace permettant de vérifier la provenance exacte de chaque matière première. <br> Entre tradition et modernité, Mimi vous initie à de nouvelles saveurs gourmandes.
+            </p>
+        </div>
+        <!-- Container for the image gallery -->
+        <div class="gallery__col2" data-aos="flip-down">       
+            <div class="gallery ">
+            
+                <!-- Full-width images with number text -->
+                <div class="slides__gallery">
+                <div class="numbertext">1 / 6</div>
+                    <img src="/Images/choux_a_la_creme.jpg" style="height: 40%; width:100%">
+                </div>
+            
+                <div class="slides__gallery">
+                <div class="numbertext">2 / 6</div>
+                    <img src="/Images/pmhq_1.jpg" style="width:100%">
+                </div>
+            
+                <div class="slides__gallery">
+                <div class="numbertext">3 / 6</div>
+                    <img src="/Images/chocolat_1.PNG" style="width:100%">
+                </div>
+            
+                <div class="slides__gallery">
+                <div class="numbertext">4 / 6</div>
+                    <img src="/Images/bltm_4.JPG" style="width:100%">
+                </div>
+            
+                <div class="slides__gallery">
+                <div class="numbertext">5 / 6</div>
+                    <img src="/Images/biscuit_4.JPG" style="width:100%">
+                </div>
+            
+                <div class="slides__gallery">
+                <div class="numbertext">6 / 6</div>
+                    <img src="/Images/gateaux_2.JPG" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption__container">
+                <p id="caption__gallery"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="/Images/choux_a_la_creme.jpg" style="width:100%" onclick="currentSlide(1)" alt="Choux à la crème">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/Images/pmhq_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Pain à l'ail au fromage à la crème coréen - 육쪽마늘빵">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/Images/chocolat_1.PNG" style="width:100%" onclick="currentSlide(3)" alt="Chocolats fait maison">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/Images/bltm_4.JPG" style="width:100%" onclick="currentSlide(4)" alt="Gâteaux aux œufs salés - Dessert vietnamien / Bánh bông lan trứng muối">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/Images/biscuit_4.JPG" style="width:100%" onclick="currentSlide(5)" alt="
+                    Biscuits faits maison">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/Images/gateaux_2.JPG" style="width:100%" onclick="currentSlide(6)" alt="Gâteau traditionnel français">
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+    
 
 
 
@@ -183,7 +296,7 @@
                         <h2 class="footer__socials__title ">RETROUVEZ-NOUS SUR :</h2>
                         <ol class="footer__socials__list ">
                             <li>
-                                <a href="http://fb.com/mimi.sweetcake " title="Facebook ">
+                                <a href="http://fb.com/mimi.sweetcake" target="_blank" title="Facebook ">
                                     <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 "
                                         viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="1 "
                                         stroke-linecap="round " stroke-linejoin="round "
@@ -193,7 +306,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://instagr.am/mimi.sweetcake " title="Instagram ">
+                                <a href="http://instagr.am/mimi.sweetcake" target="_blank" title="Instagram ">
                                     <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 "
                                         viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="1 "
                                         stroke-linecap="round " stroke-linejoin="round "

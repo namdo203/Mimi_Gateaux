@@ -1,3 +1,4 @@
+//=================NAV=================
 const navCloseEl = document.querySelector('.nav__close');
 const navList = document.querySelector('.nav__list');
 const navIconEl = document.querySelector('.nav__icon');
@@ -38,11 +39,10 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
+// ============= SLIDES =============
 var slideIndex = 0;
 showSlides();
 
-
-// ============= SLIDES =============
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -57,5 +57,38 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+//================GALLERY==================
+
+var galleryIndex = 1;
+showGallery(galleryIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showGallery(galleryIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showGallery(galleryIndex = n);
+}
+
+function showGallery(n) {
+  var k;
+  var gallery = document.getElementsByClassName("slides__gallery");
+  var dots_2 = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption__gallery");
+  if (n > gallery.length) {galleryIndex = 1}
+  if (n < 1) {galleryIndex = gallery.length}
+  for (k = 0; k < gallery.length; k++) {
+    gallery[k].style.display = "none";
+  }
+  for (k = 0; k < dots_2.length; k++) {
+    dots_2[k].className = dots_2[k].className.replace(" active", "");
+  }
+  gallery[galleryIndex-1].style.display = "block";
+  dots_2[galleryIndex-1].className += " active";
+  captionText.innerHTML = dots_2[galleryIndex-1].alt;
 }
