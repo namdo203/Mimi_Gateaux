@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/Style/GlobalStyles.css">
     <link rel="stylesheet" href="/Style/Components.css">
     <!-- aos library css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- custom css -->
     <!-- <link rel="stylesheet" href="home.css"> -->
@@ -18,7 +19,7 @@
 
 <body>
     <!-- nav section -->
-    <section class="nav navbar-inverse navbar-fixed-top">
+    <section class="nav">
         <div class="container">
             <div class="nav__wrapper">
                 <a href="/Index.html" class="logo">
@@ -29,25 +30,8 @@
                     <h2>Depuis 2017</h2>
                 </nav>
                 <nav>
-                    <div class="nav__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-menu">
-                            <line x1="3" y1="12" x2="21" y2="12" />
-                            <line x1="3" y1="6" x2="21" y2="6" />
-                            <line x1="3" y1="18" x2="21" y2="18" />
-                        </svg>
-                    </div>
                     <div class="nav__bgOverlay"></div>
                     <ul class="nav__list">
-                        <div class="nav__close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-x">
-                                <line x1="18" y1="6" x2="6" y2="18" />
-                                <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
-                        </div>
                         <div class="nav__list__wrapper">
                             <li><a class="nav__link" href="#propos">A propos</a></li>
                             <li><a class="nav__link" href="#slide">Slideshow</a></li>
@@ -55,6 +39,9 @@
                             <li><a class="btn primary-btn" href="#storeInfo">Contact</a></li>
                         </div>
                     </ul>
+                </nav>
+                <nav class="nav__active">
+                    <div class="fas fa-bars" id="menu-btn"></div>
                 </nav>
             </div>
         </div>
@@ -114,7 +101,8 @@
             <div class="contact">
                 <h2>CONTACTEZ-NOUS</h2>
                 <P>
-                    Vous avez une question ou besoin d’une information complémentaire ? N’hésitez pas à nous contacter !  <br> Nos équipes vous répondront dans les meilleurs délais.
+                    Vous avez une question ou besoin d’une information complémentaire ? N’hésitez pas à nous contacter !
+                    <br> Nos équipes vous répondront dans les meilleurs délais.
                 </P>
             </div>
             <div class="storeInfo__wrapper" data-aos="fade-up">
@@ -178,99 +166,105 @@
                     </div>
                 </a>
             </div>
-            
+
         </div>
     </section>
     <!-- info section end -->
 
     <!-- Gallery Section -->
-    <section class="gallery__wrapper" id="produits" >
+    <section class="gallery__wrapper" id="produits">
         <div class="gallery__col1" data-aos="fade-up-right">
             <h2>PRODUITS POPULAIRES</h2>
             <h3>Matières premières de qualité</h3>
             <p>
-                Nous utilisons dans la fabrication de nos pâtisseries les meilleurs ingrédients. <br>  Seuls les meilleurs ingrédients offrant un maximum de sécurité entrent dans la préparation de nos pâtisseries et biscuits.  
+                Nous utilisons dans la fabrication de nos pâtisseries les meilleurs ingrédients. <br> Seuls les
+                meilleurs ingrédients offrant un maximum de sécurité entrent dans la préparation de nos pâtisseries et
+                biscuits.
             </p>
             <h3>Renforcement des contrôles de sécurité alimentaire </h3>
             <p>
-                Nos fournisseurs disposent d'un système de traçabilité efficace permettant de vérifier la provenance exacte de chaque matière première. <br> Entre tradition et modernité, Mimi vous initie à de nouvelles saveurs gourmandes.
+                Nos fournisseurs disposent d'un système de traçabilité efficace permettant de vérifier la provenance
+                exacte de chaque matière première. <br> Entre tradition et modernité, Mimi vous initie à de nouvelles
+                saveurs gourmandes.
             </p>
         </div>
         <!-- Container for the image gallery -->
-        <div class="gallery__col2" data-aos="flip-down">       
+        <div class="gallery__col2" data-aos="flip-down">
             <div class="gallery ">
-            
+
                 <!-- Full-width images with number text -->
                 <div class="slides__gallery">
-                <div class="numbertext">1 / 6</div>
+                    <div class="numbertext">1 / 6</div>
                     <img src="/Images/choux_a_la_creme.jpg" style="height: 40%; width:100%">
                 </div>
-            
+
                 <div class="slides__gallery">
-                <div class="numbertext">2 / 6</div>
+                    <div class="numbertext">2 / 6</div>
                     <img src="/Images/pmhq_1.jpg" style="width:100%">
                 </div>
-            
+
                 <div class="slides__gallery">
-                <div class="numbertext">3 / 6</div>
+                    <div class="numbertext">3 / 6</div>
                     <img src="/Images/chocolat_1.PNG" style="width:100%">
                 </div>
-            
+
                 <div class="slides__gallery">
-                <div class="numbertext">4 / 6</div>
+                    <div class="numbertext">4 / 6</div>
                     <img src="/Images/bltm_4.JPG" style="width:100%">
                 </div>
-            
+
                 <div class="slides__gallery">
-                <div class="numbertext">5 / 6</div>
+                    <div class="numbertext">5 / 6</div>
                     <img src="/Images/biscuit_4.JPG" style="width:100%">
                 </div>
-            
+
                 <div class="slides__gallery">
-                <div class="numbertext">6 / 6</div>
+                    <div class="numbertext">6 / 6</div>
                     <img src="/Images/gateaux_2.JPG" style="width:100%">
                 </div>
-            
+
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
+
                 <!-- Image text -->
                 <div class="caption__container">
-                <p id="caption__gallery"></p>
+                    <p id="caption__gallery"></p>
                 </div>
-            
+
                 <!-- Thumbnail images -->
                 <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="/Images/choux_a_la_creme.jpg" style="width:100%" onclick="currentSlide(1)" alt="Choux à la crème">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="/Images/pmhq_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Pain à l'ail au fromage à la crème coréen - 육쪽마늘빵">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="/Images/chocolat_1.PNG" style="width:100%" onclick="currentSlide(3)" alt="Chocolats fait maison">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="/Images/bltm_4.JPG" style="width:100%" onclick="currentSlide(4)" alt="Gâteaux aux œufs salés - Dessert vietnamien / Bánh bông lan trứng muối">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="/Images/biscuit_4.JPG" style="width:100%" onclick="currentSlide(5)" alt="
+                    <div class="column">
+                        <img class="demo cursor" src="/Images/choux_a_la_creme.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="Choux à la crème">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/Images/pmhq_1.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="Pain à l'ail au fromage à la crème coréen - 육쪽마늘빵">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/Images/chocolat_1.PNG" style="width:100%"
+                            onclick="currentSlide(3)" alt="Chocolats fait maison">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/Images/bltm_4.JPG" style="width:100%" onclick="currentSlide(4)"
+                            alt="Gâteaux aux œufs salés - Dessert vietnamien / Bánh bông lan trứng muối">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/Images/biscuit_4.JPG" style="width:100%"
+                            onclick="currentSlide(5)" alt="
                     Biscuits faits maison">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="/Images/gateaux_2.JPG" style="width:100%" onclick="currentSlide(6)" alt="Gâteau traditionnel français">
-                </div>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/Images/gateaux_2.JPG" style="width:100%"
+                            onclick="currentSlide(6)" alt="Gâteau traditionnel français">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Gallery Section -->
     
-
-
-
-
     <!-- Paiement_footer -->
     <div class="paiement " data-aos="flip-down ">
         <img src="/Logo/footer-american-express.png " alt="American Express " title="American Express ">

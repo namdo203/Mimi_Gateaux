@@ -59,76 +59,31 @@ html {
     text-underline-offset: 7px;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav {
-        position: relative;
-        /* overflow-x: scroll; */
-    }
+#menu-btn {
+    font-size: x-large;
+    display: none
+}
 
-    .nav__icon {
-        display: block;
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
     }
-
-    .nav__icon svg,
-    .nav__close svg {
-        pointer-events: none;
-        height: 30px;
-        width: 30px;
-    }
-
-    .nav__close {
-        display: block;
-        position: absolute;
-        color: var(--black-1);
-        right: 1rem;
-        top: 1rem;
+    #menu-btn:hover{
         cursor: pointer;
+        color: rgb(214, 47, 47);
     }
-
     .nav__list {
-        z-index: 1000;
         position: absolute;
-        left: 100%;
-        top: 0;
-        height: 40vh;
-        width: 24vw;
-        background: var(--white-1);
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 2rem;
-        transform: translate(0%);
-        overflow: hidden;
-        transition: 0.3s ease-in transform;
+        right: -100%;
+        background-color: rgb(189, 188, 188);
+        width: 12rem;
+        height: auto;
     }
-
-    .nav__list.show {
-        transform: translate(-100%);
+    .nav__list__wrapper  li{
+        margin: 7px;
     }
-
-    .nav__list li {
-        display: block;
-        text-align: right;
-        margin-bottom: 2rem;
-    }
-
-    .nav__list a {
-        font-size: 1.6rem;
-    }
-
-    .nav__bgOverlay {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1000;
-        height: 100vh;
-        width: 100%;
-        background: rgba(18, 24, 14, 0.808);
-        display: none;
-    }
-
-    .nav__bgOverlay.active {
-        display: block;
+    .nav__active {
+        right : 0;
     }
 }
 
@@ -193,6 +148,7 @@ html {
 /* Slideshow */
 * {
     box-sizing: border-box;
+    transition: .3s linear;
 }
 
 body {
@@ -395,15 +351,7 @@ img {
     position: relative;
 }
 
-.gallery__col1 {
-    flex: 1;
-    text-align: right;
-}
 
-.gallery__col2 {
-    flex: 4;
-    max-width: 600px;
-}
 
 /* Hide the images by default */
 .slides__gallery {
