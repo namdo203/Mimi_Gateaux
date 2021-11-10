@@ -1,44 +1,41 @@
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
+    /* scroll-padding-top: 9rem; */
 }
 
-/* Nav Styles */
+* {
+    box-sizing: border-box;
+    transition: .3s linear;
+}
+
+/* ============================ Nav Styles ============================ */
 .nav {
-    padding: 2rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
-    width: 10%;
+    width: 7rem;
 }
 
-#title {
+.title {
     text-align: center;
-    margin-top: 2%;
+    padding-top: 20px;
 }
 
-#title h1 {
+.title h1 {
     font-size: xx-large;
     font-weight: bolder;
-    text-decoration: underline;
-    text-underline-offset: 30%;
+    /* text-decoration: underline;
+    text-underline-offset: 10px; */
 }
 
-#title h2 {
-    margin-top: 3%;
+.title h2 {
+    /* margin-top: 10px; */
     font-size: x-large;
-}
-
-.nav__icon,
-.nav__close,
-.nav__bgOverlay {
-    display: none;
-}
-
-.nav__wrapper {
-    display: flex;
-    justify-content: space-between;
 }
 
 .nav__list li {
@@ -46,7 +43,7 @@ html {
     margin: 0 1rem;
 }
 
-.nav__list .nav__link {
+.nav__link {
     font-size: 1.8rem;
     font-family: Architects Daughter;
     color: var(--black-2);
@@ -60,18 +57,42 @@ html {
 }
 
 #menu-btn {
-    font-size: x-large;
+    font-size: 400%;
     display: none
 }
+
+/* Global Button Styles */
+.contact-btn {
+    color: var(--violet);
+    font-family: Architects Daughter;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    padding: 1.2rem 2rem;
+}
+
+.contact-btn {
+    color: var(--violet);
+    background: var(--pink);
+}
+
+.contact-btn:hover {
+    color: brown;
+    background-color: sandybrown;
+}
+
+/* End Global Button */
 
 @media (max-width:768px) {
     #menu-btn {
         display: inline-block;
     }
-    #menu-btn:hover{
+
+    #menu-btn:hover {
         cursor: pointer;
         color: rgb(214, 47, 47);
     }
+
     .nav__list {
         position: absolute;
         right: -100%;
@@ -79,48 +100,20 @@ html {
         width: 12rem;
         height: auto;
     }
-    .nav__list__wrapper  li{
+
+    .nav__list__wrapper li {
         margin: 7px;
     }
+
     .nav__active {
-        right : 0;
+        top: 0;
+        right: 0;
     }
 }
 
-/* End Nav Styles */
+/*============================ End Nav Styles ============================*/
 
-
-/* Global Button Styles */
-.btn {
-    color: var(--violet);
-    font-family: Architects Daughter;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 1.4rem;
-    padding: 1.2rem 2rem;
-}
-
-.primary-btn {
-    color: var(--violet);
-    background: var(--pink);
-}
-
-.primary-btn:hover {
-    color: brown;
-    background-color: sandybrown;
-}
-
-@media only screen and (min-width: 700px) {
-    .btn {
-        padding: 1.3rem 2rem;
-        font-size: 2rem;
-    }
-}
-
-/* End Global Button */
-
-
-/* Propos */
+/*============================ Propos ============================*/
 .propos {
     padding-top: 20%;
     padding-bottom: 20%;
@@ -142,22 +135,14 @@ html {
     font-size: x-large;
 }
 
-/* End Propos */
+/*============================ End Propos ============================*/
 
 
-/* Slideshow */
-* {
-    box-sizing: border-box;
-    transition: .3s linear;
-}
+/*============================ Slideshow ============================*/
 
-body {
-    font-family: Verdana, sans-serif;
-}
-
-.mySlides {
+/* .mySlides {
     display: none;
-}
+} */
 
 img {
     vertical-align: middle;
@@ -249,10 +234,10 @@ img {
     }
 }
 
-/* End Slideshow */
+/*============================ End Slideshow ============================*/
 
 
-/* Store info section */
+/*============================ Store info section ============================*/
 
 .contact {
     text-align: center;
@@ -329,14 +314,11 @@ img {
     }
 }
 
-/* End Store Info Section */
+/*======================= End Store Info Section =======================*/
 
 
-/* Gallery Section */
+/*============================ Gallery Section ============================*/
 
-/* * {
-    box-sizing: border-box;
-  } */
 .gallery__wrapper {
     display: flex;
     align-items: center;
@@ -346,12 +328,20 @@ img {
     margin-top: 5%;
 }
 
+.gallery__col1 {
+    flex: 1;
+    text-align: right;
+}
+
+.gallery__col2 {
+    flex: 1;
+}
+
 /* Position the image container (needed to position the left and right arrows) */
 .gallery {
     position: relative;
+    max-width: 500px;
 }
-
-
 
 /* Hide the images by default */
 .slides__gallery {
@@ -431,7 +421,7 @@ img {
     opacity: 1;
 }
 
-/* End Gallery Section */
+/*======================== End Gallery Section ========================*/
 
 
 /* Paiement Section */
