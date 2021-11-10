@@ -15,6 +15,11 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* make navbar sticky */
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: antiquewhite;
+    z-index: 100;
 }
 
 .logo {
@@ -96,7 +101,7 @@ html {
     .nav__list {
         position: absolute;
         right: -100%;
-        background-color: rgb(189, 188, 188);
+        background-color: antiquewhite;
         width: 12rem;
         height: auto;
     }
@@ -443,7 +448,7 @@ img {
 /* Footer Styles */
 
 footer {
-    background: var(--pink);
+    background: antiquewhite    ;
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
