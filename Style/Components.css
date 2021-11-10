@@ -169,7 +169,7 @@ html {
 
 @media (max-width:768px) {
     .propos {
-        padding-top: 50%;
+        padding-top: 30%;
     }
     .propos p {
         font-size: 20px;
