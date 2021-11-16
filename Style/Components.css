@@ -181,10 +181,6 @@ html {
 
 /*============================ Slideshow ============================*/
 
-/* .mySlides {
-    display: none;
-} */
-
 img {
     vertical-align: middle;
 }
@@ -494,7 +490,7 @@ img {
 /*================ Paiement Section ================*/
 .paiement {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: var(--black-2);
     margin: 1em;
     padding: 2%;
@@ -502,10 +498,12 @@ img {
 
 .paiement img {
     height: 40px;
+    width: auto;
 }
 @media (max-width : 468px) {
     .paiement img {
         height: 20px;
+        width: auto;
     }
 }
 
